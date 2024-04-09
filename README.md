@@ -6,17 +6,26 @@ The details of that API can be viewed at: [https://wikitech.wikimedia.org/wiki/A
 The project requires node and npm to be present.
 
 
-## Instructions for executing the application for development
+## Checkout and build
      
-        git clone x
-        cd x
+        git clone https://github.com/ruelloehr/viewsapi.git
+        cd viewsapi
         npm install
-        npm test
-        npm start
+        npm run test
+        npm run start
+
+        This will start the application locally and allow to you execute api calls.
+
+        The next step is to create a the docker image.
+
+        npm run docker:build
+        npm run docker:run
+        npm run dock:stop
 
 
-## Instructions for executing built docker image:
+        A convenience target also exists to remove the docker image, npm run docker:remove
 
+        Views the scripts section of the package.json for more details.
 
 
 ## Usage:

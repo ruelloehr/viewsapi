@@ -5,7 +5,11 @@
   "main": "app.js",
   "scripts": {
     "test": "jest",
-    "start": "node app.js"
+    "start": "node app.js",
+    "docker:stop": "docker container stop apiviews",
+    "docker:remove": "docker container rm apiviews",
+    "docker:build": "docker build -t apiviews .",
+    "docker:run": "docker run -p 3000:3000 -d --name apiviews apiviews"
   },
   "keywords": [],
   "author": "",
